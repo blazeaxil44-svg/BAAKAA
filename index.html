@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><h1>project baakaa</h1></title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <header class="hero" id="welcome">
+      <div class="hero__content">
+        <p class="eyebrow"><p class="eyebrow">
+An Interactive Love Story
+</p></p>
+        <h1><h1>Satt ❤️ Baakaa</h1></h1>
+        <p class="hero__text">
+          Every memory deserves a place to live.
+
+This little world was made only for you.
+
+So take a deep breath,
+
+put on your earphones,
+
+and let's walk through our story together.
+
+❤️
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#timeline">Begin Our Journey ❤️</a>
+          <a class="btn btn--ghost" href="#final-letter">Skip To The Ending</a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="top-nav" aria-label="Section navigation">
+      <a href="#welcome">Welcome</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#memory-lane">Memory Lane</a>
+      <a href="#unlock-heart">Quiz</a>
+      <a href="#gift">Gift</a>
+      <a href="#catch-love">Game</a>
+      <a href="#final-boss">Boss Quiz</a>
+      <a href="#final-letter">Letter</a>
+    </nav>
+
+    <main>
+      <section class="card section" id="timeline">
+        <div class="section__heading">
+          <p class="eyebrow">2. Story Timeline</p>
+          <h2>Where the story begins</h2>
+        </div>
+        <div class="timeline-list">
+          <article class="timeline-item">
+            <span>01</span>
+            <div>
+              <h3>The spark</h3>
+              <p>This chapter will be filled with your favorite first memory.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span>02</span>
+            <div>
+              <h3>The growing bond</h3>
+              <p>Here you can add the sweetest moments that shaped your connection.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <span>03</span>
+            <div>
+              <h3>The future</h3>
+              <p>Leave a note about the memories you want to build together next.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="card section" id="memory-lane">
+        <div class="section__heading">
+          <p class="eyebrow">3. Memory Lane</p>
+          <h2>Little moments, big meaning</h2>
+        </div>
+        <div class="memory-grid">
+          <article class="memory-card">
+            <h3>First laugh</h3>
+            <p>Tell me the little moment that made your heart feel light.</p>
+          </article>
+          <article class="memory-card">
+            <h3>Shared comfort</h3>
+            <p>This space can hold the feeling of being understood without words.</p>
+          </article>
+          <article class="memory-card">
+            <h3>Secret favorite</h3>
+            <p>Add the tiny detail that only the two of you would love.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card section" id="unlock-heart">
+        <div class="section__heading">
+          <p class="eyebrow">4. Unlock My Heart quiz</p>
+          <h2>One question to open the next door</h2>
+        </div>
+        <div class="quiz-box">
+          <p>
+            “What would make your heart feel most cherished today?”
+          </p>
+          <button class="btn btn--primary" id="revealAnswer">Reveal a thoughtful answer</button>
+          <p class="quiz-answer" id="quizAnswer" hidden>
+            A gentle message, a warm embrace, and a little extra time together.
+          </p>
+        </div>
+      </section>
+
+      <section class="card section" id="gift">
+        <div class="section__heading">
+          <p class="eyebrow">5. Choose A Gift</p>
+          <h2>Pick a treasure to carry forward</h2>
+        </div>
+        <div class="gift-grid">
+          <button class="gift-card" data-gift="A handwritten letter">
+            <strong>Letter</strong>
+            <span>Soft words, gathered with care</span>
+          </button>
+          <button class="gift-card" data-gift="A favorite memory box">
+            <strong>Memory box</strong>
+            <span>Little treasures for big feelings</span>
+          </button>
+          <button class="gift-card" data-gift="A candlelit evening">
+            <strong>Night under stars</strong>
+            <span>Quiet romance, wrapped in calm</span>
+          </button>
+        </div>
+        <p class="selected-gift" id="selectedGift">Choose one and it will be remembered here.</p>
+      </section>
+
+      <section class="card section" id="catch-love">
+        <div class="section__heading">
+          <p class="eyebrow">6. Catch My Love game</p>
+          <h2>Catch the heart before it floats away</h2>
+        </div>
+        <div class="game-panel">
+          <div class="game-controls">
+            <button class="btn btn--primary" id="startGame">Start game</button>
+            <div class="scoreboard">
+              <span>Score: <strong id="score">0</strong></span>
+              <span>Time: <strong id="timer">10</strong>s</span>
+            </div>
+          </div>
+          <div class="game-area" id="gameArea"></div>
+          <p class="game-message" id="gameMessage">Tap start when you are ready.</p>
+        </div>
+      </section>
+
+      <section class="card section" id="final-boss">
+        <div class="section__heading">
+          <p class="eyebrow">7. Final Boss quiz</p>
+          <h2>One last question before the ending</h2>
+        </div>
+        <div class="quiz-box">
+          <p>What do you want the final message to feel like?</p>
+          <div class="choice-list">
+            <button class="choice-pill">Warm</button>
+            <button class="choice-pill">Playful</button>
+            <button class="choice-pill">Tender</button>
+          </div>
+          <p class="quiz-answer">Choose the mood and I will turn it into your final line.</p>
+        </div>
+      </section>
+
+      <section class="card section" id="final-letter">
+        <div class="section__heading">
+          <p class="eyebrow">8. Final Letter</p>
+          <h2>The ending will be written with your words</h2>
+        </div>
+        <div class="letter-card">
+          <p>
+            “This page is waiting for the final note — a closing line, a promise,
+            or a tiny message that feels like home.”
+          </p>
+          <p class="muted">I will fill this section once you share the final message you want to leave.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
