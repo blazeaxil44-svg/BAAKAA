@@ -3,37 +3,124 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><h1>project baakaa</h1></title>
+    <title><h1><title>Satt ❤️ Baakaa</title></h1></title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="progress-bar" id="progressBar"></div>
 
-    <header class="hero" id="welcome">
-      <div class="hero__content">
-        <p class="eyebrow"><p class="eyebrow">
-An Interactive Love Story
-</p></p>
-        <h1><h1>Satt ❤️ Baakaa</h1></h1>
-        <p class="hero__text">
-          Every memory deserves a place to live.
+<header class="hero" id="welcome">
 
-This little world was made only for you.
+    <div class="hero__overlay"></div>
 
-So take a deep breath,
+    <div class="hero__content">
 
-put on your earphones,
-
-and let's walk through our story together.
-
-❤️
+        <p class="eyebrow">
+            ❤️ A Little World I Made For You
         </p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#timeline">Begin Our Journey ❤️</a>
-          <a class="btn btn--ghost" href="#final-letter">Skip To The Ending</a>
+
+        <h1>
+            Satt
+            <span class="heart">❤️</span>
+            Baakaa
+        </h1>
+
+        <p class="hero__text">
+
+            Every memory deserves a place to live.
+
+            <br><br>
+
+            This isn't just a website.
+
+            <br>
+
+            It's every laugh,
+
+            every ride,
+
+            every stay,
+
+            every call,
+
+            and every little moment
+
+            that made us...
+
+            us.
+
+        </p>
+
+        <button id="beginJourney" class="btn btn--primary">
+            Begin the journey
+        </button>
+
+    </div>
+
+    <div class="scrollHint">
+
+        ↓ Scroll
+
+    </div>
+
+</header><section id="loadingScreen" class="loading-screen hidden">
+
+    <div class="loading-box">
+
+        <h2>Loading Your Memories ❤️</h2>
+
+        <div class="loading-bar">
+            <div id="loadingProgress"></div>
         </div>
-      </div>
-    </header>
+
+        <p id="loadingText">Preparing something special...</p>
+
+    </div>
+
+</section>
+<section id="intro" class="intro-screen">
+
+    <div class="intro-card">
+
+        <h2>Before We Begin ❤️</h2>
+
+        <p>
+
+            This isn't just another website.
+
+        </p>
+
+        <p>
+
+            It's every little memory,
+            every smile,
+            every ride,
+            every stay,
+            every laugh...
+
+            wrapped into one journey.
+
+        </p>
+
+        <div class="intro-list">
+
+            <p>🎧 Put on your earphones</p>
+
+            <p>💖 Find a comfortable place</p>
+
+            <p>🌙 Turn your brightness up</p>
+
+            <p>⏳ This experience takes around 15 minutes</p>
+
+        </div>
+
+        <button class="btn btn--primary" id="startStory">
+    ❤️ I'm Ready
+</button>
+
+    </div>
+
+</section>
 
     <nav class="top-nav" aria-label="Section navigation">
       <a href="#welcome">Welcome</a>
@@ -47,35 +134,157 @@ and let's walk through our story together.
     </nav>
 
     <main>
-      <section class="card section" id="timeline">
-        <div class="section__heading">
-          <p class="eyebrow">2. Story Timeline</p>
-          <h2>Where the story begins</h2>
+      <section id="timeline" class="story">
+
+    <div class="chapter-title">
+
+        <span>📖 CHAPTER ONE</span>
+
+        <h2>Our Story</h2>
+
+        <p>
+            Every beautiful story begins with a single moment.
+        </p>
+
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-line"></div>
+
+        <div class="story-card left">
+
+            <div class="story-dot"></div>
+
+            <div class="story-content">
+
+                <div class="story-icon">🌱</div>
+
+                <h3>2017</h3>
+
+                <p>
+
+                    Two strangers.
+
+                    <br><br>
+
+                    Two different lives.
+
+                    <br><br>
+
+                    Without knowing...
+
+                    destiny had already started writing
+                    our story.
+
+                </p>
+
+            </div>
+
         </div>
-        <div class="timeline-list">
-          <article class="timeline-item">
-            <span>01</span>
-            <div>
-              <h3>The spark</h3>
-              <p>This chapter will be filled with your favorite first memory.</p>
+
+        <div class="story-card right">
+
+            <div class="story-dot"></div>
+
+            <div class="story-content">
+
+                <div class="story-icon">❤️</div>
+
+                <h3>8 October 2020</h3>
+
+                <p>
+
+                    The day everything changed.
+
+                    <br><br>
+
+                    Not because life became perfect.
+
+                    <br><br>
+
+                    But because it became ours.
+
+                </p>
+
             </div>
-          </article>
-          <article class="timeline-item">
-            <span>02</span>
-            <div>
-              <h3>The growing bond</h3>
-              <p>Here you can add the sweetest moments that shaped your connection.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <span>03</span>
-            <div>
-              <h3>The future</h3>
-              <p>Leave a note about the memories you want to build together next.</p>
-            </div>
-          </article>
+
         </div>
-      </section>
+
+        <div class="story-card left">
+
+            <div class="story-dot"></div>
+
+            <div class="story-content">
+
+                <div class="story-icon">🏍</div>
+
+                <h3>The Adventures</h3>
+
+                <p>
+
+                    Every ride.
+
+                    <br>
+
+                    Every laugh.
+
+                    <br>
+
+                    Every late-night call.
+
+                    <br>
+
+                    Every "Baakaa."
+
+                    <br><br>
+
+                    They slowly became
+                    our favourite memories.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="story-card right">
+
+            <div class="story-dot"></div>
+
+            <div class="story-content">
+
+                <div class="story-icon">❤️</div>
+
+                <h3>Today</h3>
+
+                <p>
+
+                    Still laughing.
+
+                    <br>
+
+                    Still annoying each other.
+
+                    <br>
+
+                    Still growing.
+
+                    <br><br>
+
+                    Still writing
+
+                    our favourite chapter.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
       <section class="card section" id="memory-lane">
         <div class="section__heading">
